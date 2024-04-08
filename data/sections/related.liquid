@@ -1,0 +1,33 @@
+<div class="page-width">
+  <h2 class="related__title">関連記事</h2>
+  <div class="news__boxs">
+    {% for article in blogs["news"].articles limit: 4 %}
+      <a href="{{ article.url }}" class="news__box">
+        <div class="news__wrapper">
+          <p class="news__date">{{ article.published_at | date: "%Y-%m-%d" }}</p>
+        </div>
+        {% for tag in artticle.tags %}
+          <p class="news__cat">{{ tag }}</p>
+        {% endfor %}
+        <div class="news__picture">
+          <img src="{{ article | img_url: 'medium' }}" alt="">
+        </div>
+        <p class="news__title">{{ article.title }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "related",
+    "tag": "section",
+    "class": "related",
+    "presets": [
+      {
+        "name": "related"
+      }
+    ]
+  }
+{% endschema %}

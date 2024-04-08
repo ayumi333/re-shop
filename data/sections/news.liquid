@@ -1,0 +1,37 @@
+<div class="page-width">
+  <p class="section__en">News & Topics</p>
+  <h2 class="section__title">ニュース＆トピックス</h2>
+  <div class="news__boxs">
+    {% for article in blogs["news"].articles limit: 4 %}
+      <a href="{{ article.url }}" class="news__box">
+        <div class="news__wrapper">
+          <p class="news__date">{{ article.published_at | date: "%Y-%m-%d" }}</p>
+        </div>
+        {% for tag in artticle.tags %}
+          <p class="news__cat">{{ tag }}</p>
+        {% endfor %}
+        <div class="news__picture">
+          <img src="{{ article | img_url: 'medium' }}" alt="">
+        </div>
+        <p class="news__title">{{ article.title }}</p>
+      </a>
+    {% endfor %}
+  </div>
+  <div class="news__btnArea">
+    <a href="https://c2d6ab-2.myshopify.com/blogs/news" class="news__btn">記事一覧へ</a>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "news",
+    "tag": "section",
+    "class": "news",
+    "presets": [
+      {
+        "name": "news"
+      }
+    ]
+  }
+{% endschema %}

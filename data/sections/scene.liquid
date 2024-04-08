@@ -1,0 +1,49 @@
+<div class="page-width">
+  <div class="scene__header">
+    <div class="scene__logo">
+      <img src="{{ 'logo.png' | asset_url }}" alt="">
+    </div>
+    <p class="scene__text">だからこそ</p>
+  </div>
+  <h2 class="section__title">様々なシーンで大活躍！</h2>
+  <div class="swiper__container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="{{ 'slide.jpg' | asset_url }}" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="{{ 'slide2.jpg' | asset_url }}" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="{{ 'slide3.jpg' | asset_url }}" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="{{ 'slide4.jpg' | asset_url }}" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="{{ 'slide5.jpg' | asset_url }}" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="{{ 'slide6.jpg' | asset_url }}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "scene",
+    "tag": "section",
+    "class": "scene",
+    "presets": [
+      {
+        "name": "scene"
+      }
+    ]
+  }
+{% endschema %}

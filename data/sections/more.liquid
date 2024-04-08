@@ -1,0 +1,23 @@
+<div class="page-width">
+  <p class="more__text">“温度反応記憶機能”を<br class="is-sp">持たせた、高性能な素材で</p>
+  <h2 class="more__title">
+    <span class="more__title--inline">モレ</span>ない<span class="more__title--inline">ムレ</span>ないを実現！</h2>
+  <picture class="more__picture">
+    <source media="(min-width: 768px)" srcset="{{ 'more-pc4.png' | asset_url }}">
+    <source media="(max-width: 767px)" srcset="{{ 'more-sp3.png' | asset_url }}">
+    <img src="{{ 'more-pc4z.png' | asset_url }}" alt="">
+  </picture>
+</div>
+
+{% schema %}
+  {
+    "name": "more",
+    "tag": "section",
+    "class": "more",
+    "presets": [
+      {
+        "name": "more"
+      }
+    ]
+  }
+{% endschema %}

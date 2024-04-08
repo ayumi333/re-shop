@@ -1,0 +1,116 @@
+<div class="page-width" id="contact">
+  <p class="section__en">Inquiry</p>
+  <h2 class="section__title">お問い合わせ</h2>
+  {%- form 'contact'
+    , id: 'ContactForm'
+    , class: contact_form_class -%}
+    {%- if form.posted_successfully? -%}
+      <h2
+        class="form-status form-status-list form__message"
+        tabindex="-1"
+        autofocus>
+        {% render 'icon-success' %}
+        {{ 'templates.contact.form.post_success' | t }}
+      </h2>
+    {%- elsif form.errors -%}
+      <div class="form__message">
+        <h2
+          class="form-status caption-large text-body"
+          role="alert"
+          tabindex="-1"
+          autofocus>
+          {% render 'icon-error' %}
+          {{ 'templates.contact.form.error_heading' | t }}
+        </h2>
+      </div>
+      <ul class="form-status-list caption-large" role="list">
+        <li>
+          <a href="#ContactForm-email" class="link">
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
+          </a>
+        </li>
+      </ul>
+    {%- endif -%}
+    <div class="contact__form">
+      <div class="contact__boxs">
+        <div class="contact__box">
+          <div class="contact__row">
+            <label for="name" class="contact__left required">お名前</label>
+            <input
+              type="text"
+              id="name"
+              name="contact[お名前]"
+              class="contact__right"
+              required>
+          </div>
+          <div class="contact__row">
+            <label for="number" class="contact__left">電話番号</label>
+            <input
+              type="number"
+              id="number"
+              name="contact[電話番号]"
+              class="contact__right">
+          </div>
+          <div class="contact__row">
+            <label for="email" class="contact__left required">メールアドレス</label>
+            <input
+              type="email"
+              id="email"
+              name="contact[email]"
+              class="contact__right"
+              required>
+          </div>
+          <div class="contact__row">
+            <label for="subject" class="contact__left required">件名</label>
+            <input
+              type="text"
+              id="subject"
+              name="contact[件名]"
+              class="contact__right"
+              required>
+          </div>
+          <div class="contact__row">
+            <label for="id" class="contact__left">注文ID</label>
+            <input
+              type="text"
+              id="id"
+              name="contact[注文ID]"
+              class="contact__right">
+          </div>
+        </div>
+        <div class="contact__box">
+          <label for="textarea" class="contact__label required">お問い合わせ内容</label>
+          <textarea
+            id="textarea"
+            name="contact[お問い合わせ内容]"
+            class="contact__textarea"
+            required></textarea>
+        </div>
+      </div>
+      <div class="contact__button">
+        <button type="submit" class="button contact__submit">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    </div>
+  {%- endform -%}
+  <!--
+  <div class="contact__textArea">
+    <p class="contact__text"><span class="contact__text--inline">折</span>返しのメールが受信できるように、ドメイン指定受信で「kafka2005.co.jp」を許可するように設定してください。</p>
+  </div>
+</div>
+  -->
+
+{% schema %}
+  {
+    "name": "contact",
+    "tag": "section",
+    "class": "contact",
+    "presets": [
+      {
+        "name": "contact"
+      }
+    ]
+  }
+{% endschema %}

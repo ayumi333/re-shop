@@ -1,0 +1,60 @@
+<div class="page-width">
+  <div class="feature__logo">
+    <img src="{{ 'logo-feature.png' | asset_url }}" alt="">
+  </div>
+  <h2 class="feature__title">モレとムレを防ぐ<br class="is-sp"><span class="feature__title--inline">3</span>つの特徴</h2>
+  <div class="feature__boxs">
+    <div class="feature__box">
+      <p class="feature__point">
+        Point<br>
+        <span class="feature__point--inline">1</span>
+      </p>
+      <p class="feature__ttl">高い防水性</p>
+      <div class="feature__area">
+        <div class="feature__picture">
+          <img src="{{ 'feature.png' | asset_url }}" alt="">
+        </div>
+        <p class="feature__text">全天候型ウェアにも使われているディアプレックス。一切穴のないメンブレン（膜）を生地にラミネートしているので、経血のモレを許しません。</p>
+      </div>
+    </div>
+    <div class="feature__box">
+      <p class="feature__point">
+        Point<br>
+        <span class="feature__point--inline">2</span>
+      </p>
+      <p class="feature__ttl">環境温度に適応</p>
+      <div class="feature__area">
+        <div class="feature__picture">
+          <img src="{{ 'feature2.png' | asset_url }}" alt="">
+        </div>
+        <p class="feature__text">夏は暑さによるムレ、冬は寒さによる子宮の収縮と、生理は一年中悩みがつきもの。でもアンジェライトには、環境温度適応機能が備わっているので夏は涼しく、冬は暖かく過ごせるのです。温度に合わせて透湿性が変わるのでムレの心配もほとんどなし！</p>
+      </div>
+    </div>
+    <div class="feature__box">
+      <p class="feature__point">
+        Point<br>
+        <span class="feature__point--inline">3</span>
+      </p>
+      <p class="feature__ttl">シームレス</p>
+      <div class="feature__area">
+        <div class="feature__picture">
+          <img src="{{ 'feature3.png' | asset_url }}" alt="">
+        </div>
+        <p class="feature__text">どんなに防水性が高くても、肌と下着の間に隙間が生まれたら、そこから経血が漏れてしまうおそれが。それも隙間を一切作らないシームレス加工がなされているアンジェライトなら、モレの心配が限りなくゼロに近づきます。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "feature",
+    "tag": "section",
+    "class": "feature",
+    "presets": [
+      {
+        "name": "feature"
+      }
+    ]
+  }
+{% endschema %}

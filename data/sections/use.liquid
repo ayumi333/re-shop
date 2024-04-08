@@ -1,0 +1,49 @@
+<div class="page-width">
+  <p class="section__en">How to Use</p>
+  <h2 class="section__title">ご使用方法</h2>
+  <div class="use__boxs">
+    <div class="use__box">
+      <p class="use__title">
+        Step<br>
+        <span class="use__title--inline">1</span>
+      </p>
+      <div class="use__picture">
+        <img src="{{ 'use.png' | asset_url }}" alt="">
+      </div>
+      <p class="use__text">通常通り、ナプキンを付けたショーツやサニタリーショーツを履いてください。</p>
+    </div>
+    <div class="use__box">
+      <p class="use__title">
+        Step<br>
+        <span class="use__title--inline">2</span>
+      </p>
+      <div class="use__picture">
+        <img src="{{ 'use2.png' | asset_url }}" alt="">
+      </div>
+      <p class="use__text">ショーツの上からアンジェライトを着用して下さい。</p>
+    </div>
+    <div class="use__box">
+      <p class="use__title">
+        Step<br>
+        <span class="use__title--inline">3</span>
+      </p>
+      <div class="use__picture">
+        <img src="{{ 'use3.png' | asset_url }}" alt="">
+      </div>
+      <p class="use__text">アンジェライトが経血漏れをブロックしてくれるので、いつも通りの運動着や、おしゃれ着を楽しめます！</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "use",
+    "tag": "section",
+    "class": "use",
+    "presets": [
+      {
+        "name": "use"
+      }
+    ]
+  }
+{% endschema %}

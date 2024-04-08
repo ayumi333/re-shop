@@ -1,0 +1,57 @@
+<div class="page-width">
+  <div class="point__boxs">
+    <div class="point__box">
+      <p class="point__title">
+        Point<br>
+        <span class="point__title--inline">1</span>
+      </p>
+      <div class="point__picture">
+        <img src="{{ 'point.png' | asset_url}}" alt="">
+      </div>
+      <p class="point__text">薄くて軽い！さらに足口部分もゴムを使用していないので、締め付け感がなくストレスフリー</p>
+    </div>
+    <div class="point__box">
+      <p class="point__title">
+        Point<br>
+        <span class="point__title--inline">2</span>
+      </p>
+      <div class="point__picture">
+        <img src="{{ 'point2.png' | asset_url}}" alt="">
+      </div>
+      <p class="point__text">シームレス仕様なので、縫い目がなく洋服に響きにくい！</p>
+    </div>
+    <div class="point__box">
+      <p class="point__title">
+        Point<br>
+        <span class="point__title--inline">3</span>
+      </p>
+      <div class="point__picture">
+        <img src="{{ 'point3.png' | asset_url}}" alt="">
+      </div>
+      <p class="point__text">洗濯表示を転写プリントにしているので、肌に当たらない</p>
+    </div>
+    <div class="point__box">
+      <p class="point__title">
+        Point<br>
+        <span class="point__title--inline">4</span>
+      </p>
+      <div class="point__picture">
+        <img src="{{ 'point4.png' | asset_url}}" alt="">
+      </div>
+      <p class="point__text">生地に消臭・抗菌作用があるので、匂いも気にならない♪</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "point",
+    "tag": "section",
+    "class": "point",
+    "presets": [
+      {
+        "name": "point"
+      }
+    ]
+  }
+{% endschema %}

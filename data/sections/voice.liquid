@@ -1,0 +1,58 @@
+<div class="page-width">
+  <p class="section__en">User’s Voice</p>
+  <h2 class="section__title">お客様の声</h2>
+  <div class="voice__boxs">
+    <div class="voice__textContents">
+      <div class="voice__texts">
+        <div class="voice__wrap">
+          <div class="voice__area">
+            <p class="voice__text">履き始めて最初の1週間は漏れが全くなくて感動しました。</p>
+            <!--<p class="voice__info">レースタイプ/Mサイズ/40代女性</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="voice__texts">
+        <div class="voice__wrap">
+          <div class="voice__area">
+            <p class="voice__text">通気性が本当に良くてムレが気にならず、生理の時以外にも履きたいと思いました。</p>
+            <!--<p class="voice__info">レースタイプ/Mサイズ/30代女性</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="voice__texts">
+        <div class="voice__wrap">
+          <div class="voice__area">
+            <p class="voice__text">サイズ感が良くて、とても履きやすかったです。10代の頃からよくモレで悩んでいたけど、悩みが解消されてよかったです。夜も安心してぐっすり寝れるようになりましたね。もっと早く出会いたかったです！</p>
+            <!--<p class="voice__info">レースタイプ/Mサイズ/20代女性</p>-->
+          </div>
+        </div>
+      </div>
+      <div class="voice__texts">
+        <div class="voice__wrap">
+          <div class="voice__area">
+            <p class="voice__text">つるつるの素材には最初驚きましたが、肌にべたっと張り付かずに良かったです。モレもムレも全然ない感じで、生理用としても普段の黒パンよりも全然いいと感じました。動きやすいところもいいと思いました。</p>
+            <!--<p class="voice__info">レースタイプ/Sサイズ/40代女性</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <picture class="voice__picture">
+      <source media="(min-width: 768px)" srcset="{{ 'person3.png' | asset_url }}">
+      <source media="(max-width: 767px)" srcset="{{ 'person8.png' | asset_url }}">
+      <img src="{{ 'person8.png' | asset_url }}" alt="">
+    </picture>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "voice",
+    "tag": "section",
+    "class": "voice",
+    "presets": [
+      {
+        "name": "voice"
+      }
+    ]
+  }
+{% endschema %}

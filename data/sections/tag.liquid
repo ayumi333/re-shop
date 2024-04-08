@@ -1,0 +1,25 @@
+<div class="page-width">
+  <div class="tag__container">
+    <div class="tag__list">
+      タグ：
+      {% for tag in article.tags %}
+        <div class="tag__wrapper">
+        {{ tag | link_to_tag: tag }}{% unless forloop.last %},{% endunless %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "tag",
+    "tag": "section",
+    "class": "tag",
+    "presets": [
+      {
+        "name": "tag"
+      }
+    ]
+  }
+{% endschema %}

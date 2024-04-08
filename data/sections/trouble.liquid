@@ -1,0 +1,52 @@
+<div class="page-width">
+  <p class="trouble__ttl">憂鬱な生理の日、</p>
+  <h2 class="trouble__title">
+    <span class="trouble__title--inline">こ</span>
+    <span class="trouble__title--inline">ん</span>
+    <span class="trouble__title--inline">な</span>
+    <span class="trouble__title--inline">お</span>
+    <span class="trouble__title--inline">悩</span>
+    <span class="trouble__title--inline">み</span>ありませんか？
+  </h2>
+  <div class="trouble__picture is-sp">
+    <img src="{{ 'person7.png' | asset_url }}" alt="">
+  </div>
+  <div class="trouble__boxs">
+    <div class="trouble__box">
+      <p class="trouble__btn"><span class="trouble__btn--inline">日中</span>のお悩み</p>
+      <ul class="trouble__list">
+        <li class="trouble__item"><span class="trouble__item--inline">授</span>業や仕事で、長時間ナプキンを変えられずモレが不安</li>
+        <li class="trouble__item"><span class="trouble__item--inline">特</span>に多い日だけど、好きな服を着て出かけたい。</li>
+        <li class="trouble__item"><span class="trouble__item--inline">モ</span>レが気になって、運動を思いっきりできない。</li>
+        <li class="trouble__item">
+          <span class="trouble__item--inline">い</span>つも使っているオーバーパンツは蒸れてしまって汗と経血で気持ち悪い。
+        </li>
+        <li class="trouble__item">
+          <span class="trouble__item--inline">周</span>期が不定期で、ナプキンを持っていない日に突然生理がきてしまった。
+        </li>
+      </ul>
+    </div>
+    <div class="trouble__box">
+      <p class="trouble__btn"><span class="trouble__btn--inline trouble__btn--inline2">夜中</span>のお悩み</p>
+      <ul class="trouble__list">
+        <li class="trouble__item"><span class="trouble__item--inline">眠</span>っている間、シーツを汚してしまわないか不安</li>
+        <li class="trouble__item"><span class="trouble__item--inline">モ</span>レが気になって寝返りできない</li>
+        <li class="trouble__item"><span class="trouble__item--inline">特</span>に多い日はモレが気になってよく眠れない</li>
+        <li class="trouble__item"><span class="trouble__item--inline">生</span>理の日の旅行や出張、ベットや布団を汚さないか不安</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "trouble",
+    "tag": "section",
+    "class": "trouble",
+    "presets": [
+      {
+        "name": "trouble"
+      }
+    ]
+  }
+{% endschema %}

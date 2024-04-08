@@ -1,0 +1,393 @@
+
+
+{% comment %} <link rel="stylesheet" type="text/css" media="screen" href="../assets/about.cssassets/about.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:960px)" href="../assets/about_sp.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:961px)" href="../assets/about_pc.css"> {% endcomment %}
+{{ 'about.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" type="text/css" media="screen and (max-width:960px)" href="{{ 'about_sp.css' | asset_url }}">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:961px)" href="{{ 'about_pc.css' | asset_url }}">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<meta name="format-detection" content="telephone=no">
+
+<!-- スライドショー -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+
+
+</head>
+
+<!--body start-->
+
+<body>
+	{% comment %} <header>
+		<div id="header_area">
+			<div class="header_a">
+			
+				<div class="logo">
+					<a href="./index.html">
+						<h1><img src="../assets/angelite.png" alt="ブランドのロゴマーク"></h1>
+					</a>
+				</div>	
+				
+	<div id="nav_area">
+     <div class="menuWrapper">
+      <a href="#menu" id="menuButton"><span>MENU</span></a>
+     </div>
+     
+	<nav> {% endcomment %}
+		{% comment %} <ul class="sp_nav">
+		<li class="menu_title">MENU</li>
+		<a href="https://c2d6ab-2.myshopify.com/">
+	     	<li>HOME</li>
+     	</a>
+     	<a href=".https://c2d6ab-2.myshopify.com/about">
+	     	<li>ABOUT</li>
+     	</a>
+     	<a href="https://youtu.be/wbSHbz1yUQ0" class="bra_m">
+	     	<li>BRAND MOVIE<span><img src="../assets/link.svg"></span></li>
+     	</a>
+     	<a href="https://youtu.be/foiH7V1Am3k" class="pro_m">
+	     	<li>PRODUCTS MOVIE<span><img src="../assets/link.svg"></span></li>
+     	</a>
+     </ul>
+     
+   	</nav> {% endcomment %}
+   	
+   	{% comment %} <div class="btn">
+     	
+		<a href="https://c2d6ab-2.myshopify.com/" class="btn_03"><img src="../assets/onlinestore.svg" alt="オンラインストアBUTTON"></a>
+		
+     </div> {% endcomment %}
+   	
+   	
+<!--------------------------　後で差し替える---------------------------->
+ {% comment %} </div>
+			</div><!--header_a-->
+		</div><!--header_area-->
+		
+	</header> {% endcomment %}
+
+	<div class="mainvisual_area">
+		<div class="about_mv">
+			<div class="about_mv_img">
+    			<picture>
+					<source srcset="{{ 'mainvisual_about.jpg' | asset_url }}" media="(min-width: 961px)">
+					<source srcset="{{ 'mainvisual_about._sp.jpg' | asset_url }}" media="(max-width: 960px)">
+					<img src="{{ 'mainvisual_sp.jpg' | asset_url }}" alt="">
+				</picture>
+    		</div>
+		</div>
+		<div class="mv_title"><img src="{{ 'about_txt.svg' | asset_url }}" alt="angeliteについて"></div>
+	</div>
+
+	<div class="ab_area">
+		<div class="ab_txt">
+			<div class="ab_title01">
+				<img src="{{ 'stay_txt.svg' | asset_url }}" alt="product_areaエリアタイトル">
+			</div>
+				<h2>ブルーデイを快適に。</h2>
+		</div>
+	
+		<div class="ab_p">
+			<p>人生の中で、平均40年間付き合うことになる生理。</p>
+			<p>誰しも経験したことがある、経血のモレやムレの不安。</p>
+			<p>毎月やってくるブルーデイで、ただでさえ塞ぎがちな生理の日だからこそ、</p>
+			<p>快適に過ごすことをあきらめてほしくない。</p>
+			<br>
+			<p>そんな思いからアンジェライトは誕生しました。</p>
+		</div>
+	</div>
+
+
+	<div class="brand_histry_area">
+		<div class="bh_wrap">
+		<div class="bh_container">
+	
+			<h3>女性が生理のことを気にせずに、自由にのびのびと暮らしてほしい。</h3>
+			
+		<div class="bh_c_sp">	
+			<div class="bh_txt">
+				<p>きっかけは、アンジェライト開発者の小森谷さんが経験したある出来事でした。</p>
+				<p>もともと出血量も多く、経血のモレに悩まされていた小森谷さん。</p>
+				<p>ある日の仕事帰り、生理中でもないのにボトムスに経血がべっとりついてしまったのです。自分が座る前に座っていた人の経血モレが移ったことに気づき、自分以外にも悩んでいる人がいることを実感しました。</p>
+				<p>楽しみな旅行でも飛行機の座席を汚してしまったり、ホテルのシーツを汚してしまったり、生理のときには誰もが抱える不安があります。</p>
+				<br>
+				<p>「経血モレを完全にブロックできるサニタリーショーツがあれば、女性が抱える不安を解消できるのに」と考えるようになり、アンジェライトは誕生しました。</p>
+			</div><!-- bh_c_sp -->
+			
+			<div class="prof">
+				<h3><img src="{{ 'prof.svg' | asset_url }}" alt="Profileタイトル"></h3>
+				<p class="prof_name">小森谷　則子<span>Komoriya Noriko</span></p>
+				<p>
+				<p>ファッションの専門学校を卒業後、パタンナーから開発室デザイナーとして従事。</p>
+				<p>退職後は、パリ在住デザイナー池田貴雄を師とし、新規ブランドを立ち上げる等精力的に活躍。その後、海外企業でデザインクリエイティブマネージャーに就任。帰国後は国内アパレル企業で統括ディレクターに就任する等、国内海外問わず活躍してきた。近年は、フェムテックに関わる素材研究等に勤しみ、2012年から2015年にかけて日本特許、国際特許を
+取得。Angeliteによって、世界中の女性がもつ悩み・問題を解決することに心血を注ぐ。
+				</p>
+			</div>
+		</div>			
+			
+		</div><!-- bh_container -->
+		</div><!-- bh_wrap -->
+	</div>
+
+	<div class="fabric_area">
+		<div class="fd_wrap">	
+		<div class="fd_txt">
+			<div class="fd_title01">
+				<img src="{{ 'fd_title.svg' | asset_url }}" alt="fabric_areaエリアタイトル">
+			</div>
+				<h2>「ディアプレックス」<br>にたどり着いた経緯</h2>
+		</div>
+
+				<div class="fd_container">
+					<div class="fd_txt_p">
+					<p>
+					経血を漏らさない完全な防水性と、下着の中も蒸れない透湿性を保持するという相反する機能を兼ね備えた素材は、世界中を探してもなかなか見つかりませんでした。
+					</p>
+					<p>
+					そんな中、出会ったのが「ディアプレックス」。<br>もともとレインコートなどの全天候型ウェアに使用されている素材で、防水性、透湿性に優れた機能素材。<br><br>
+魅力的な機能性がありながらも、アウターに使用されることが多いため、女性のサニタリーショーツには不向きな素材。
+
+					</p>
+					<p>生地の厚さやストレッチ性の保持など、さまざまなアプローチで改良を重ねました。</p>
+					<p>そして、薄くて軽量、なめらかな肌触りを実現したアンジェライトが完成したのです。</p>
+					</div>
+					
+					<div class="fd_img">
+						<img src="{{ 'diaplex_p.png' | asset_url }}" alt="ディアプレックス図解">
+					</div>
+				
+				</div>
+			
+			</div>
+
+	</div> 
+	
+	
+
+	<div class="mfm_area">
+		<div class="mfm_wrap">	
+		
+			<div class="mfm_txtflex">
+				<div class="mfm_txt">
+					<div class="mfm_title01">
+						<img src="{{ 'mfm_title.svg' | asset_url }}" alt="fabric_areaエリアタイトル">
+					</div>
+						<h2>“環境温度適応機能”<br>のメカニズム</h2>
+				</div>
+				<div class="mfm_p">
+					<p>ディアプレックスを構成するポリマー分子(DiAPLEX膜)は、温度によってミクロブラウン運動を起こす性質を持ちます。<br>この運動は温度が高くなるほど活発になり、隙間が一切無い素材にもかかわらず、互いのポリマー分子間に隙間を生じます。温度変化に対応し、隙間が柔軟に変化することで、ウェア内湿度を左右する水蒸気分子の透過量をコントロールしムレを防止します。
+					</p>
+				</div>
+			</div>
+			
+			<div class="mfm_img">
+				<div class="mfm_mv_img">
+    			<picture>
+					<source srcset="{{ 'mfm_Illustrated.png' | asset_url }}" media="(min-width: 961px)">
+					<source srcset="{{ 'mfm_illustrated_sp.png' | asset_url }}" media="(max-width: 960px)">
+					<img src="{{ 'mainvisual_sp.jpg' | asset_url }}" alt="">
+				</picture>
+    		</div>
+				<div class="mfm_img_txt">
+					<p class="mfm01"><span>●寒い時</span>ポリマー分子には一切隙間がなく、保温してくれる。</p>
+					<p class="mfm02"><span>●暑い時</span>ポリマー分子はミクロブラウン運動を起こし
+水分を外にだす。</p>
+				</div>
+				
+				<div class="user_guid_movie" playsinline="">
+					<iframe src="https://www.youtube.com/embed/LKjvclp-9HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+					</iframe>
+					
+						<p>引用元：<a href="https://www.mcf.co.jp/business/material-business-solutions">https://www.mcf.co.jp/business/material-business-solutions</a></p>
+					</div>
+			</div>
+			
+			
+		</div><!-- mfm_wrap -->
+	</div><!-- mfm_area -->
+	
+	
+	
+	
+	<div class="">
+	</div>
+	<div class="">
+	</div>			
+
+
+	
+	<!-- contact -->
+		<section id="contact_area">
+		<div>
+			<p>アクティブな日でも気にならない。<br>女性をサポートするインナーショーツ</p>
+		</div>
+		<!--
+		<div class="c_btn">
+			<a href="https://angelite.jp/collections/all">ご購入はこちら</a>
+		</div>
+		-->
+
+          
+		<div class="c_btn2">
+			<a href="https://angelite.jp/#contact">お問い合わせはこちら</a>
+		</div>
+		
+		</section>
+	
+	<!-- contact end -->
+
+
+
+
+
+
+{% comment %} <footer id="fooder_area">
+	
+	<div class="footer_info">
+		<div class="f_address">
+				<div class="f_address_name"><a href="http://www.kafka2005.co.jp/" target="_blank">カフカ株式会社</a></div>
+				
+				<div class="f_address_02">
+					<div class="f_address_dtl">〒150-0013 東京都渋谷区恵比寿4-22-10 ebisu422 2F</div>
+					<div class="f_address_tel">TEL : 03-6455-7600</div>
+				</div>
+				
+				<div class="f_submenu">
+					<a href="https://www.instagram.com/angelite_official/" class="sns_icon" target="_blank">
+						<img src="../assets/gl-logo.png" alt="インスタグラム">
+					</a>
+				</div>
+		</div>
+		<!--  ここまで  -->
+	</div>
+
+	<small>© 2023 Angelite</small>
+
+</footer> {% endcomment %}
+
+<!--JS-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--自作のJS-->
+<script src="js/6-1-7.js"></script>
+
+<script>
+	$('.slider').slick({
+		autoplay: true,//自動的に動き出すか。初期値はfalse。
+		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+		speed: 500,//スライドのスピード。初期値は300。
+		slidesToShow: 3,//スライドを画面に3枚見せる
+		slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+		centerMode: true,//要素を中央ぞろえにする
+		variableWidth: true,//幅の違う画像の高さを揃えて表示
+		dots: true,//下部ドットナビゲーションの表示
+	});
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--自作のJS-->
+<script src="js/6-1-2.js"></script>
+
+<script>
+const swiper = new Swiper(".swiper", {
+slidesPerView: 'auto',
+speed: 1000,
+loop: true, 
+loopedSlides: 2,
+autoplay:{
+delay: 5000,
+disableOnInteraction: false,
+
+},
+
+});
+
+
+</script>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('menuButton').addEventListener('click', function (ev) {
+    ev.preventDefault();
+    this.classList.toggle('active');
+  });
+});
+
+const btn = document.querySelector('.menuWrapper');
+const nav = document.querySelector('nav');
+ 
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open-menu')
+});
+
+
+var ywsa = document.getElementById("pagetop");
+var yws_pagetop = function() {
+    if (window.pageYOffset > 400) {
+        ywsa.classList.add("fixed")
+    } else {
+        ywsa.classList.remove("fixed")
+    }
+};
+window.addEventListener("load", yws_pagetop);
+window.addEventListener("scroll", yws_pagetop);
+ywsa.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    })
+});
+
+</script>
+
+<script>
+$('.sp_nav a[href]').on('click', function(event) {
+    $('.menuWrapper').trigger('click');
+});
+
+</script>
+
+<script type='text/javascript'>
+function scroll_effect() {
+  var element = document.getElementsByClassName('scroll-up');
+  if(!element) return;
+                      
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+  var showTiming = 200; // 要素を表示するタイミング
+  for(var i = 0; i < element.length; i++) { 
+    var elemClientRect = element[i].getBoundingClientRect(); 
+    var elemY = scrollY + elemClientRect.top; 
+    if(scrollY > elemY - windowH + showTiming) {
+      element[i].classList.add('is-show');
+    }
+  }
+}
+window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+</script>
+
+
+
+
+<!--JS-->
+
+</body><!--body end-->
+
+</html>

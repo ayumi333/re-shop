@@ -1,0 +1,61 @@
+<div class="page-width">
+  <p class="section__en">How to Wash</p>
+  <h2 class="section__title">お手入れ方法</h2>
+  <div class="wash__boxs">
+    <div class="wash__box">
+      <p class="wash__point">
+        Point<br>
+        <span class="wash__point--inline">1</span>
+      </p>
+      <p class="wash__title">洗濯ネットに入れる</p>
+      <div class="wash__area">
+        <div class="wash__picture">
+          <img src="{{ 'wash.png' | asset_url }}" alt="">
+        </div>
+        <p class="wash__text">表面がデリケートな素材で出来ている為、洗濯ネットに入れてください。</p>
+      </div>
+    </div>
+    <div class="wash__box">
+      <p class="wash__point">
+        Point<br>
+        <span class="wash__point--inline">2</span>
+      </p>
+      <p class="wash__title">洗濯機で洗う</p>
+      <div class="wash__area">
+        <div class="wash__picture">
+          <img src="{{ 'wash2.png' | asset_url }}" alt="">
+        </div>
+        <p class="wash__text">後は洗濯機で洗うだけ。簡単にお手入れができます。</p>
+      </div>
+    </div>
+  </div>
+  <div class="wash__content">
+    <div class="wash__container">
+      <div class="wash__wrapper">
+        <div class="wash__wrap">
+          <p class="wash__info">Warning</p>
+          <p class="wash__txt">
+            ・手洗いの場合は優しく押し洗いをお願いします。<br>
+            ・タンブラー乾燥はおやめください。直射日光は避け、陰干しにしてください。<br>
+            ・漂白剤は使用しないでください。<br>
+            ・洗濯機使用の場合は、パッケージの洗濯ネット袋をご使用ください。<br>
+            ・長時間濡れたままで放置することや、水などに浸け置く事は、製品の防水膜がはがれやすくなるので、お止めください。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "wash",
+    "tag": "section",
+    "class": "wash",
+    "presets": [
+      {
+        "name": "wash"
+      }
+    ]
+  }
+{% endschema %}

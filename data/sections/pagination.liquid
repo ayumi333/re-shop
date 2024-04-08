@@ -1,0 +1,31 @@
+<div class="page-width">
+  <div class="pagination__wrapper">
+    <div class="pagination__content">
+      {% if blog.previous_article %}
+        <a href="{{blog.previous_article}}" class="previous-btn">前の投稿</a>
+      {% endif %}
+    </div>
+
+    <div class="pagination__content">
+      <a href="https://c2d6ab-2.myshopify.com/blogs/news" class="pagination__back">記事一覧へ</a>
+    </div>
+
+    <div class="pagination__content">
+      {% if blog.next_article %}
+        <a href="{{blog.next_article}}" class="next-btn">次の投稿</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "pagination",
+    "tag": "section",
+    "class": "pagination",
+    "presets": [
+      {
+        "name": "pagination"
+      }
+    ]
+  }
+{% endschema %}
